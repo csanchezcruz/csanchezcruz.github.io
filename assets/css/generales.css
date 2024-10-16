@@ -1,56 +1,58 @@
-/* Reset CSS */
-* {
+/* Variables globales */
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #1a1a1a;
+    --accent-color: #ff2e63; /* Rojo intenso para detalles */
+    --font-family: 'Courier New', monospace;
+  }
+  
+  /* Estilos generales */
+  body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-.main-header {
-    background-color: #000;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-.main-header ul {
-    list-style: none;
-    padding: 0;
-}
-
-.main-header ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.main-header a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-}
-
-section {
-    padding: 2rem;
-    text-align: center;
-}
-
-.social-links {
-    list-style: none;
-}
-
-.social-links li {
-    display: inline;
-    margin: 0 10px;
-}
+    background-color: var(--secondary-color);
+    font-family: var(--font-family);
+  }
+  
+  .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .navbar {
+    background-color: transparent !important;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background-image: url('hero-intrusos.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  .lead {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+  }
+  
+  /* Tarjetas */
+  .card {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--accent-color);
+  }
+  
+  .card-title {
+    color: var(--accent-color);
+  }
+  

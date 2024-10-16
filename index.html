@@ -1,74 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grillo Music - Sitio Oficial</title>
-    <link rel="stylesheet" href="assets/css/generales.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Intrusos - Garage Punk</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="assets/css/generales.css">
 </head>
 <body>
-    <header class="main-header">
-        <h1>Grillo Music</h1>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#biografia">Biografía</a></li>
-                <li><a href="#musica">Música</a></li>
-                <li><a href="#videos">Videos</a></li>
-                <li><a href="#tour">Tour</a></li>
-                <li><a href="#tienda">Tienda</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="inicio" class="hero">
-        <h2>Bienvenido a Grillo Music</h2>
-        <p>Explora nuestra música y únete al viaje.</p>
-    </section>
-
-    <section id="biografia">
-        <h2>Biografía</h2>
-        <p>Desde nuestros comienzos, hemos buscado trascender fronteras y fusionar sonidos.</p>
-    </section>
-
-    <section id="musica">
-        <h2>Música</h2>
-        <ul>
-            <li>Álbum 1 - 2022</li>
-            <li>Álbum 2 - 2023</li>
+  <!-- Header con Navbar -->
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand mx-auto" href="#">Los Intrusos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#discos">Discografía</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tour">Próximos Shows</a>
+          </li>
         </ul>
-    </section>
+      </div>
+    </nav>
+  </header>
 
-    <section id="videos">
-        <h2>Videos</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/example" 
-                title="YouTube video" frameborder="0" allowfullscreen></iframe>
-    </section>
+  <!-- Sección Hero -->
+  <section class="hero d-flex align-items-center">
+    <div class="container text-center text-white">
+      <h1 class="display-4">Los Intrusos</h1>
+      <p class="lead">Sonido crudo y directo desde el garage.</p>
+    </div>
+  </section>
 
-    <section id="tour">
-        <h2>Tour</h2>
-        <ul>
-            <li>Ciudad de México - 15 Nov 2024</li>
-            <li>Guadalajara - 22 Nov 2024</li>
-        </ul>
-    </section>
+  <!-- Sección Discografía -->
+  <section id="discos" class="container my-5">
+    <h2 class="text-center text-white mb-4">Discografía</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="disco1.jpg" class="card-img-top" alt="Demo 2022">
+          <div class="card-body">
+            <h5 class="card-title">Demo 2022</h5>
+            <p class="card-text">Nuestro primer demo, 100% DIY.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="disco2.jpg" class="card-img-top" alt="EP Caos y Ruido">
+          <div class="card-body">
+            <h5 class="card-title">Caos y Ruido</h5>
+            <p class="card-text">Riffs rápidos y letras explosivas.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="disco3.jpg" class="card-img-top" alt="En Vivo">
+          <div class="card-body">
+            <h5 class="card-title">En Vivo</h5>
+            <p class="card-text">Nuestro sonido sin filtros, directo del escenario.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="tienda">
-        <h2>Tienda</h2>
-        <p>Explora nuestra <a href="#">tienda en línea</a> para encontrar mercancía exclusiva.</p>
-    </section>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>© 2024 Los Intrusos - Todos los derechos reservados.</p>
+  </footer>
 
-    <footer id="contacto">
-        <h2>Contacto</h2>
-        <p>Síguenos en nuestras redes:</p>
-        <ul class="social-links">
-            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-        </ul>
-        <p>&copy; 2024 Grillo Music. Todos los derechos reservados.</p>
-    </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-    
