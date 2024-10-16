@@ -20,24 +20,6 @@
     --font-size-md: 18px; /* Medium Devices */
     --font-size-lg: 20px; /* Large Devices */
     --font-size-xl: 22px; /* Extra Large Devices */
-
-    --heading-size-h1-xs: var(--font-size-lg);
-    --heading-size-h1-sm: var(--font-size-lg);
-    --heading-size-h1-md: var(--font-size-xl);
-    --heading-size-h1-lg: var(--font-size-xl);
-    --heading-size-h1-xl: var(--font-size-xl);
-
-    --heading-size-h2-xs: var(--font-size-md);
-    --heading-size-h2-sm: var(--font-size-md);
-    --heading-size-h2-md: var(--font-size-lg);
-    --heading-size-h2-lg: var(--font-size-lg);
-    --heading-size-h2-xl: var(--font-size-xl);
-
-    --heading-size-h3-xs: var(--font-size-sm);
-    --heading-size-h3-sm: var(--font-size-md);
-    --heading-size-h3-md: var(--font-size-md);
-    --heading-size-h3-lg: var(--font-size-lg);
-    --heading-size-h3-xl: var(--font-size-lg);
 }
 
 header {
@@ -105,10 +87,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/ladrillos.jpg') no-repeat center center/cover;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fabrica.jpg') no-repeat center center/cover; */
 }
-
 .hero h1 {
-    font-size: var(--heading-size-h1-xs); /* Tamaño variable */
+    font-size: var(--font-size-lg);
     font-family: var(--hero-font);
     color: var(--color-2);
     margin-bottom: 1rem;
@@ -206,15 +189,11 @@ footer p {
     .navbar-brand {
         font-size: var(--font-size-sm);
     }
-    .hero {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/ladrillos.jpg') no-repeat center center/cover;
-        /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fabrica.jpg') no-repeat center center/cover; */
-    }
     .hero h1 {
-        font-size: var(--heading-size-h1-xs);
+        font-size: var(--font-size-lg);
     }
     .hero p {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-md);
     }
     .img-hero {
         display: none;
@@ -231,13 +210,8 @@ footer p {
     .navbar-brand {
         font-size: var(--font-size-sm);
     }
-    .hero {
-        background: url('../img/ladrillos.jpg') no-repeat center center/cover;
-        backdrop-filter: blur(6px);
-    }
     .hero h1 {
-        font-size: var(--heading-size-h1-sm);
-        color: var(--primary-color);
+        font-size: var(--font-size-lg);
         font-weight: bold;
     }
     .hero p {
@@ -255,12 +229,8 @@ footer p {
     .navbar-brand {
         font-size: var(--font-size-md);
     }
-    .hero {
-        background: url('../img/ladrillos.jpg') no-repeat center center/cover;
-        backdrop-filter: blur(6px);
-    }
     .hero h1 {
-        font-size: var(--heading-size-h1-md);
+        font-size: var(----font-size-xl);
     }
     .hero p {
         font-size: var(--font-size-lg);
@@ -272,7 +242,7 @@ footer p {
 
 @media (min-width: 992px) {
     .hero h1 {
-        font-size: var(--heading-size-h1-lg);
+        font-size: var(--font-size-xl);
     }
     .hero p {
         font-size: var(--font-size-xl);
