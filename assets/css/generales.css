@@ -1,12 +1,14 @@
 /* Variables Globales */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 :root {
     --primary-color: #ff0000; /* Rojo vibrante */
     --secondary-color: #000000; /* Negro */
-    --text-color: #ffffff; /* Blanco */
+    --text-color: #f7f1d1;
     --background-color: #1a1a1a; /* Gris oscuro */
     
     --hero-font: 'Poppins', sans-serif;
-    --body-font: 'Roboto', sans-serif;
+    --body-font: 'Poppins', sans-serif;
 
     --color-1: #c61d25;
     --color-2: #f7f1d1;
@@ -20,6 +22,8 @@
     --font-size-md: 18px; /* Medium Devices */
     --font-size-lg: 20px; /* Large Devices */
     --font-size-xl: 22px; /* Extra Large Devices */
+
+    --size-title-xl: 42px; /* Extra Large Devices */
 }
 
 header {
@@ -47,7 +51,7 @@ body {
 
 .navbar-brand {
     font-family: var(--hero-font);
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-md);
     font-weight: bold;
 }
 
@@ -128,16 +132,55 @@ body {
 }
 
 /* Próximos Shows */
-#tour {
-    background-color: var(--background-color);
-}
-
-.list-group-item {
-    background-color: var(--secondary-color);
+.tour-container {
+    background-color: #f8f9fa;
+  }
+  
+  .title {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    color: var(--color-1);
+  }
+  
+  .evento-item {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .evento-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .mes {
+    font-weight: 600;
+    color: #007bff;
+  }
+  
+  .fecha {
+    color: #6c757d;
+  }
+  
+  .lugar {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+  }
+  
+  .ubicacion {
+    font-size: 0.85rem;
     color: var(--text-color);
-    border: none;
-}
-
+  }
+  
+  .flyer {
+    font-size: 1rem;
+    color: #17a2b8;
+    cursor: pointer;
+  }
+  
+  .flyer:hover {
+    text-decoration: underline;
+  }
+  
+  
 /* Footer */
 footer {
     background-color: var(--secondary-color);
