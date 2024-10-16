@@ -275,7 +275,7 @@ footer p {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 560px) and (max-width: 767.98px) {
     .container-navbar {
         padding: 0 12px 0 12px;
     }
@@ -284,7 +284,7 @@ footer p {
     }
     .navbar-brand {
         font-size: var(--font-size-sm);
-    }.
+    }
     .navbar-brand img {
         height: 30px;
     }
