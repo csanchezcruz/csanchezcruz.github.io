@@ -39,7 +39,11 @@
     --heading-size-h3-lg: var(--font-size-lg);
     --heading-size-h3-xl: var(--font-size-lg);
 }
-
+header {
+    position: sticky; /* Cambia a fixed si deseas que esté siempre visible */
+    top: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
 /* Estilo general del body */
 body {
     background-color: var(--background-color);
@@ -60,7 +64,22 @@ body {
     font-size: var(--font-size-lg);
     font-weight: bold;
 }
-
+.container-navbar {
+    max-width: 100%;
+    padding: 0 24px 0 24px;
+    gap: 4px;
+}
+.container-navbar li:hover {
+    border: 1px solid var(--color-1);
+    color: var(--color-1);
+    border-radius: 8px;
+}
+#navbarNav ul {
+    gap: 8px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-lin {
+    background-color: var(--color-1); /* Cambia rojo por la variable global */
+}
 .nav-link {
     color: var(--text-color);
 }
@@ -81,7 +100,7 @@ body {
 .hero h1 {
     font-size: var(--heading-size-h1-xs); /* Tamaño variable */
     font-family: var(--hero-font);
-    color: var(--color-3);
+    color: var(--color-2);
     margin-bottom: 1rem;
 }
 
@@ -141,6 +160,9 @@ footer a:hover {
 
 /* Estilos personalizados con media queries */
 @media (max-width: 575.98px) {
+    .container-navbar {
+        padding: 0;
+    }
     .hero {
         background: url('../img/ladrillos.jpg') no-repeat center center/cover;
         backdrop-filter: blur(6px);
@@ -157,6 +179,9 @@ footer a:hover {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+    .container-navbar {
+        padding: 0 0 0 24px;
+    }
     .hero {
         background: url('../img/ladrillos.jpg') no-repeat center center/cover;
         backdrop-filter: blur(6px);
@@ -175,6 +200,9 @@ footer a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .container-navbar {
+        padding: 0;
+    }   
     .hero {
         background: url('../img/ladrillos.jpg') no-repeat center center/cover;
         backdrop-filter: blur(6px);
