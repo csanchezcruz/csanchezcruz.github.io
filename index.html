@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="assets/css/generales.css">
+     <!-- jQuery desde CDN -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-    
     <!-- Header y Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -47,7 +48,6 @@
             </div>
         </nav>
     </header>
-
     <!-- Sección Hero -->
     <section id="inicio" class="hero d-flex align-items-center">
         <img src="assets/img/todos.jpg" class="card-img-top img-hero " alt="Demo 2024">
@@ -83,21 +83,57 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">
-                    <div class="row align-items-center text-center py-3 evento-item">
+                    <div class="row align-items-center text-center py-3 evento-item" data-bs-toggle="modal" data-bs-target="#modalFlayer1" style="cursor: pointer;">
                         <div class="col-3 text-end">
-                            <span class="mes fs-4">Oct</span>
-                            <span class="fecha d-block fs-6">26</span>
+                            <a href="#" class="text-decoration-none w-100 d-block">
+                                <span class="mes fs-4">Oct</span>
+                                <span class="fecha d-block fs-6">26</span>
+                            </a>
                         </div>
                         <div class="col-5 text-start">
-                            <span class="lugar fs-5 fw-bold">Ixtapalocos artsesion</span>
-                            <span class="ubicacion d-block">Ixtapaluca, Edo. Méx</span>
+                            <a href="#" class="text-decoration-none w-100 d-block">
+                                <span class="lugar fs-5 fw-bold">Ixtapalocos artsesion</span>
+                                <span class="ubicacion d-block">Ixtapaluca, Edo. Méx</span>
+                            </a>
                         </div>
                         <div class="col-4">
-                            <span class="flyer">Flyer del evento</span>
+                            <a href="#" class="text-decoration-none w-100 d-block">
+                                <span class="flyer">Flyer del evento</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+           <!-- Modal HTML -->
+            <div class="modal fade" id="modalFlayer1" tabindex="-1" aria-labelledby="modalFlayer1Title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFlayer1Title">Flyer del Evento</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/images/flyer.jpg" class="img-fluid" alt="Flyer del evento">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+             <!-- Modal HTML -->
+            <div class="modal fade" id="modalFlayer2" tabindex="-1" aria-labelledby="modalFlayer2Title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFlayer2Title">Flyer del Evento</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/images/flyer.jpg" class="img-fluid" alt="Flyer del evento">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
         </div>
     </section>
     <!-- Sección Discografía -->
@@ -118,40 +154,38 @@
                     </div>
                 </div>
                 </div>
-        
                 <!-- Segunda Card -->
                 <div class="col-sm-12 col-md-3 mb-3">
-                <div class="card">
-                    <img src="assets/img/ellanovolvera.jpg" class="card-img-top" alt="Ella no volvera">
-                    <div class="card-body">
-                    <h5 class="card-title">Ella no volverá</h5>
-                    <p class="card-text">Descripción breve</p>
-                    <a href="https://www.youtube.com/watch?v=C_v03W-5hks" target="_blank" class="btn btn-primary">Ver video</a>
+                    <div class="card">
+                        <img src="assets/img/ellanovolvera.jpg" class="card-img-top" alt="Ella no volvera">
+                        <div class="card-body">
+                            <h5 class="card-title">Ella no volverá</h5>
+                            <p class="card-text">Descripción breve</p>
+                            <a href="https://www.youtube.com/watch?v=C_v03W-5hks" target="_blank" class="btn btn-primary">Ver video</a>
+                        </div>
                     </div>
                 </div>
-                </div>
-        
                 <!-- Tercera Card -->
                 <div class="col-sm-12 col-md-3 mb-3">
-                <div class="card">
-                    <img src="assets/img/deliriumtremen.jpg" class="card-img-top" alt="Delirium Tremens">
-                    <div class="card-body">
-                    <h5 class="card-title">Delirium Tremens</h5>
-                    <p class="card-text">Descripción breve</p>
-                    <a href="https://www.youtube.com/watch?v=zks_wS2IIqw" target="_blank" class="btn btn-primary">Ver video</a>
+                    <div class="card">
+                        <img src="assets/img/deliriumtremen.jpg" class="card-img-top" alt="Delirium Tremens">
+                        <div class="card-body">
+                            <h5 class="card-title">Delirium Tremens</h5>
+                            <p class="card-text">Descripción breve</p>
+                            <a href="https://www.youtube.com/watch?v=zks_wS2IIqw" target="_blank" class="btn btn-primary">Ver video</a>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <!-- Cuarta Card -->
                 <div class="col-sm-12 col-md-3 mb-3">
-                <div class="card">
-                    <img src="assets/img/donablanca.jpg" class="card-img-top" alt="Doña bñanca">
-                    <div class="card-body">
-                    <h5 class="card-title">Doña bñanca</h5>
-                    <p class="card-text">Descripción breve</p>
-                    <a href="https://www.youtube.com/watch?v=HKIcbiBJI2M" target="_blank" class="btn btn-primary">Ver video</a>
+                    <div class="card">
+                        <img src="assets/img/donablanca.jpg" class="card-img-top" alt="Doña bñanca">
+                        <div class="card-body">
+                            <h5 class="card-title">Doña bñanca</h5>
+                            <p class="card-text">Descripción breve</p>
+                            <a href="https://www.youtube.com/watch?v=HKIcbiBJI2M" target="_blank" class="btn btn-primary">Ver video</a>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -175,18 +209,14 @@
         <p>© 2024 Los Intrusos - Todos los derechos reservados.</p>
     </footer>
 <!-- </footer> -->
+ <!-- js -->
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        $(document).ready(function(){ irArriba(); }); //Hacia arriba
-
-        function irArriba(){
-        $('.ir-arriba').click(function(){ $('body,html').animate({ scrollTop:'0px' },1000); });
-        $(window).scroll(function(){
-            if($(this).scrollTop() > 0){ $('.ir-arriba').slideDown(600); }else{ $('.ir-arriba').slideUp(600); }
-        });
-        $('.ir-abajo').click(function(){ $('body,html').animate({ scrollTop:'1000px' },1000); });
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

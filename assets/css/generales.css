@@ -147,7 +147,9 @@ body {
     transition: background-color 0.3s ease;
     cursor: pointer;
   }
-  
+  .evento-item a {
+    color: var(--body-font);
+  }
   .evento-item:hover .mes,
   .evento-item:hover .fecha, 
   .evento-item:hover .lugar,
@@ -160,7 +162,7 @@ body {
   .evento-item:active .lugar,
   .evento-item:active .ubicacion,
   .evento-item:active .flyer {
-    color: var(--color-1-hover);
+    color: var(--color-1-hover) !important;
   }
   .mes {
     font-weight: 600;
@@ -172,7 +174,7 @@ body {
   }
   
   .lugar {
-    font-family: 'Arial', sans-serif;
+    /* font-family: 'Arial', sans-serif; */
     font-weight: bold;
   }
   
@@ -255,24 +257,6 @@ footer p {
     .img-hero {
         display: none;
     }
-    .carousel-control-prev {
-        left: 0;
-    }
-    .carousel-control-next {
-        right: 0 ;
-    }
-    /*Flecha para hacer la pagina hacia arriba*/
-.ir-arriba{
-    display:none;
-    background-repeat:no-repeat;
-    font-size:20px;
-    color:black;
-    cursor:pointer;
-    position:fixed;
-    bottom:10px;
-    right:10px;
-    z-index:2;
-  }
 }
 
 @media (min-width: 560px) and (max-width: 767.98px) {
@@ -297,12 +281,6 @@ footer p {
     }
     .img-hero {
         display: none;
-    }
-    .carousel-control-prev {
-        left: 0;
-    }
-    .carousel-control-next {
-        right: 0 ;
     }
     .d-none-sm {
         display: none !important;
