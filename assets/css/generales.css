@@ -207,8 +207,8 @@ footer p {
         font-size: var(--font-size-sm);
     }
     .hero {
-        background: url('../img/ladrillos.jpg') no-repeat center center/cover;
-        backdrop-filter: blur(6px);
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/ladrillos.jpg') no-repeat center center/cover;
+        /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fabrica.jpg') no-repeat center center/cover; */
     }
     .hero h1 {
         font-size: var(--heading-size-h1-xs);
