@@ -130,19 +130,6 @@ body {
 .carousel-control-next {
     right: -150px;
 }
-/* .rows-discos {
-    gap: 26px;
-}
-
-#discos .card {
-    background-color: var(--secondary-color);
-    border: none;
-}
-
-#discos .card-title {
-    color: var(--primary-color);
-    font-weight: bold;
-} */
 
 /* Próximos Shows */
 .tour-container {
@@ -256,6 +243,9 @@ footer p {
     .navbar-brand {
         font-size: var(--font-size-sm);
     }
+    .navbar-brand img {
+        height: 30px;
+    }
     .hero h1 {
         font-size: var(--font-size-lg);
     }
@@ -294,6 +284,9 @@ footer p {
     }
     .navbar-brand {
         font-size: var(--font-size-sm);
+    }.
+    .navbar-brand img {
+        height: 30px;
     }
     .hero h1 {
         font-size: var(--font-size-lg);
