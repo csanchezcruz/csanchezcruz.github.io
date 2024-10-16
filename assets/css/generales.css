@@ -11,6 +11,7 @@
     --body-font: 'Poppins', sans-serif;
 
     --color-1: #c61d25;
+    --color-1-hover: #ff4d4d;
     --color-2: #f7f1d1;
     --color-3: #0c0405;
     --color-4: #959384;
@@ -117,7 +118,16 @@ body {
 }
 
 /* Discografía */
-.rows-discos {
+.carouselExampleControls{
+    padding:5%;
+}
+.carousel-control-prev {
+    left: -150px;
+}
+.carousel-control-next {
+    right: -150px;
+}
+/* .rows-discos {
     gap: 26px;
 }
 
@@ -129,7 +139,7 @@ body {
 #discos .card-title {
     color: var(--primary-color);
     font-weight: bold;
-}
+} */
 
 /* Próximos Shows */
 .tour-container {
@@ -145,12 +155,23 @@ body {
   .evento-item {
     border-bottom: 1px solid #e0e0e0;
     transition: background-color 0.3s ease;
+    cursor: pointer;
   }
   
-  .evento-item:hover {
-    background-color: #f1f1f1;
+  .evento-item:hover .mes,
+  .evento-item:hover .fecha, 
+  .evento-item:hover .lugar,
+  .evento-item:hover .ubicacion,
+  .evento-item:hover .flyer {
+    color: var(--color-1-hover);
   }
-  
+  .evento-item:active .mes,
+  .evento-item:active .fecha, 
+  .evento-item:active .lugar,
+  .evento-item:active .ubicacion,
+  .evento-item:active .flyer {
+    color: var(--color-1-hover);
+  }
   .mes {
     font-weight: 600;
     color: #007bff;
@@ -241,6 +262,24 @@ footer p {
     .img-hero {
         display: none;
     }
+    .carousel-control-prev {
+        left: 0;
+    }
+    .carousel-control-next {
+        right: 0 ;
+    }
+    /*Flecha para hacer la pagina hacia arriba*/
+.ir-arriba{
+    display:none;
+    background-repeat:no-repeat;
+    font-size:20px;
+    color:black;
+    cursor:pointer;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    z-index:2;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -263,6 +302,16 @@ footer p {
     .img-hero {
         display: none;
     }
+    .carousel-control-prev {
+        left: 0;
+    }
+    .carousel-control-next {
+        right: 0 ;
+    }
+    .d-none-sm {
+        display: none !important;
+    }
+  
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -280,6 +329,9 @@ footer p {
     }
     .img-hero {
         display: none;
+    }
+    .d-none-sm {
+        display: none !important;
     }
 }
 
