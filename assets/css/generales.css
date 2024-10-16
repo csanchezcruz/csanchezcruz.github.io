@@ -1,58 +1,104 @@
-/* Variables globales */
+/* Variables Globales */
 :root {
-    --primary-color: #ffffff;
-    --secondary-color: #1a1a1a;
-    --accent-color: #ff2e63; /* Rojo intenso para detalles */
-    --font-family: 'Courier New', monospace;
+    --primary-color: #ff0000; /* Rojo vibrante */
+    --secondary-color: #000000; /* Negro */
+    --text-color: #ffffff; /* Blanco */
+    --background-color: #1a1a1a; /* Gris oscuro */
+    --hero-font: 'Poppins', sans-serif;
+    --body-font: 'Roboto', sans-serif;
   }
   
-  /* Estilos generales */
+  /* Estilo general del body */
   body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
     margin: 0;
     padding: 0;
-    background-color: var(--secondary-color);
-    font-family: var(--font-family);
   }
   
-  .header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-  }
-  
+  /* Header y Navbar */
   .navbar {
-    background-color: transparent !important;
+    background-color: var(--secondary-color);
+  }
+  
+  .navbar-brand {
+    font-family: var(--hero-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    color: var(--text-color);
+  }
+  
+  .nav-link:hover {
+    color: var(--primary-color);
   }
   
   /* Hero Section */
   .hero {
-    height: 100vh;
-    background-image: url('hero-intrusos.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: url('banner.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
   .hero h1 {
     font-size: 4rem;
-    font-weight: bold;
-    color: var(--primary-color);
+    font-family: var(--hero-font);
+    margin-bottom: 1rem;
   }
   
-  .lead {
+  .hero p {
     font-size: 1.5rem;
-    color: var(--accent-color);
+    margin-bottom: 2rem;
   }
   
-  /* Tarjetas */
-  .card {
+  .hero .btn {
+    background-color: var(--primary-color);
+    border: none;
+  }
+  
+  .hero .btn:hover {
+    background-color: #ff4d4d;
+  }
+  
+  /* Discografía */
+  #discos .card {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border: 1px solid var(--accent-color);
+    border: none;
   }
   
-  .card-title {
-    color: var(--accent-color);
+  #discos .card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  /* Próximos Shows */
+  #tour {
+    background-color: var(--background-color);
+  }
+  
+  .list-group-item {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--secondary-color);
+  }
+  
+  footer a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: var(--primary-color);
   }
   

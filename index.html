@@ -3,81 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Los Intrusos - Garage Punk</title>
+  <meta name="description" content="Sitio oficial de Los Intrusos - Garage punk desde el corazón del underground.">
+  <title>Los Intrusos - Página Oficial</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Estilos personalizados -->
+
+  <!-- CSS Personalizado -->
   <link rel="stylesheet" href="assets/css/generales.css">
 </head>
 <body>
-  <!-- Header con Navbar -->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-dark container">
-      <a class="navbar-brand mx-auto" href="#">Los Intrusos</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#inicio">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#discos">Discografía</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#tour">Próximos Shows</a>
-          </li>
-        </ul>
+
+  <!-- Header y Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Los Intrusos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#discos">Discografía</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tour">Próximos Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
 
   <!-- Sección Hero -->
-  <section class="hero d-flex align-items-center">
+  <section id="inicio" class="hero d-flex align-items-center">
+    <img src="assets/img/todos.jpg" class="card-img-top" alt="Demo 2022">
     <div class="container text-center text-white">
-      <h1 class="display-4">Los Intrusos</h1>
-      <p class="lead">Sonido crudo y directo desde el garage.</p>
+      <h1>Los Intrusos</h1>
+      <p class="lead">Garage punk directo desde el underground.</p>
+      <a href="https://www.youtube.com/@losintrusos8599" class="btn btn-danger" target="_blank">Escucha Nuestra Música</a>
     </div>
   </section>
 
   <!-- Sección Discografía -->
-  <section id="discos" class="container my-5">
-    <h2 class="text-center text-white mb-4">Discografía</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="disco1.jpg" class="card-img-top" alt="Demo 2022">
-          <div class="card-body">
-            <h5 class="card-title">Demo 2022</h5>
-            <p class="card-text">Nuestro primer demo, 100% DIY.</p>
+  <section id="discos" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Discografía</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/img/nocturna.jpg" class="card-img-top" alt="Demo 2022">
+            <div class="card-body">
+              <h5 class="card-title">Demo 2024</h5>
+              <p class="card-text">Primer demo, sonido crudo y DIY.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="disco2.jpg" class="card-img-top" alt="EP Caos y Ruido">
-          <div class="card-body">
-            <h5 class="card-title">Caos y Ruido</h5>
-            <p class="card-text">Riffs rápidos y letras explosivas.</p>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/img/ellanovolvera.jpg"  class="card-img-top" alt="EP Caos y Ruido">
+            <div class="card-body">
+              <h5 class="card-title">Caos y Ruido</h5>
+              <p class="card-text">Explosión sonora de riffs.</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="disco3.jpg" class="card-img-top" alt="En Vivo">
-          <div class="card-body">
-            <h5 class="card-title">En Vivo</h5>
-            <p class="card-text">Nuestro sonido sin filtros, directo del escenario.</p>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="assets/img/donablanca.jpggit" class="card-img-top" alt="En Vivo">
+            <div class="card-body">
+              <h5 class="card-title">En Vivo</h5>
+              <p class="card-text">Nuestro sonido sin filtros.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Sección Próximos Shows -->
+  <section id="tour" class="py-5">
+    <div class="container text-center">
+      <h2>Próximos Shows</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">21 Oct - La Mezcalería, Ixtapaluca</li>
+        <li class="list-group-item">15 Nov - Foro Indie Rocks, CDMX</li>
+        <li class="list-group-item">5 Dic - El Amarre, Chalco</li>
+      </ul>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
+  <footer class="bg-dark text-center text-white py-3">
     <p>© 2024 Los Intrusos - Todos los derechos reservados.</p>
+    <p>Síguenos en:
+      <a href="#" class="text-white mx-2">Instagram</a> | 
+      <a href="#" class="text-white mx-2">Facebook</a>
+    </p>
   </footer>
 
   <!-- Bootstrap JS -->
