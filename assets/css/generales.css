@@ -4,101 +4,194 @@
     --secondary-color: #000000; /* Negro */
     --text-color: #ffffff; /* Blanco */
     --background-color: #1a1a1a; /* Gris oscuro */
+    
     --hero-font: 'Poppins', sans-serif;
     --body-font: 'Roboto', sans-serif;
-  }
-  
-  /* Estilo general del body */
-  body {
+
+    --color-1: #c61d25;
+    --color-2: #f7f1d1;
+    --color-3: #0c0405;
+    --color-4: #959384;
+    --color-5: #d1c3b5;
+
+    /* Medidas de fuentes */
+    --font-size-xs: 14px; /* Extra Small Devices */
+    --font-size-sm: 16px; /* Small Devices */
+    --font-size-md: 18px; /* Medium Devices */
+    --font-size-lg: 20px; /* Large Devices */
+    --font-size-xl: 22px; /* Extra Large Devices */
+
+    --heading-size-h1-xs: var(--font-size-lg);
+    --heading-size-h1-sm: var(--font-size-lg);
+    --heading-size-h1-md: var(--font-size-xl);
+    --heading-size-h1-lg: var(--font-size-xl);
+    --heading-size-h1-xl: var(--font-size-xl);
+
+    --heading-size-h2-xs: var(--font-size-md);
+    --heading-size-h2-sm: var(--font-size-md);
+    --heading-size-h2-md: var(--font-size-lg);
+    --heading-size-h2-lg: var(--font-size-lg);
+    --heading-size-h2-xl: var(--font-size-xl);
+
+    --heading-size-h3-xs: var(--font-size-sm);
+    --heading-size-h3-sm: var(--font-size-md);
+    --heading-size-h3-md: var(--font-size-md);
+    --heading-size-h3-lg: var(--font-size-lg);
+    --heading-size-h3-xl: var(--font-size-lg);
+}
+
+/* Estilo general del body */
+body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--body-font);
     margin: 0;
     padding: 0;
-  }
-  
-  /* Header y Navbar */
-  .navbar {
+    font-size: var(--font-size-xs); /* Tamaño de fuente base */
+}
+
+/* Header y Navbar */
+.navbar {
     background-color: var(--secondary-color);
-  }
-  
-  .navbar-brand {
+}
+
+.navbar-brand {
     font-family: var(--hero-font);
-    font-size: 1.5rem;
+    font-size: var(--font-size-lg);
     font-weight: bold;
-  }
-  
-  .nav-link {
+}
+
+.nav-link {
     color: var(--text-color);
-  }
-  
-  .nav-link:hover {
+}
+
+.nav-link:hover {
     color: var(--primary-color);
-  }
-  
-  /* Hero Section */
-  .hero {
-    background: url('banner.jpg') no-repeat center center/cover;
+}
+
+/* Hero Section */
+.hero {
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 4rem;
+}
+
+.hero h1 {
+    font-size: var(--heading-size-h1-xs); /* Tamaño variable */
     font-family: var(--hero-font);
+    color: var(--color-3);
     margin-bottom: 1rem;
-  }
-  
-  .hero p {
-    font-size: 1.5rem;
+}
+
+.hero p {
+    font-size: var(--font-size-lg);
     margin-bottom: 2rem;
-  }
-  
-  .hero .btn {
+    color: var(--color-2);
+}
+
+.hero .btn {
     background-color: var(--primary-color);
     border: none;
-  }
-  
-  .hero .btn:hover {
+}
+
+.hero .btn:hover {
     background-color: #ff4d4d;
-  }
-  
-  /* Discografía */
-  #discos .card {
+}
+
+/* Discografía */
+#discos .card {
     background-color: var(--secondary-color);
     border: none;
-  }
-  
-  #discos .card-title {
+}
+
+#discos .card-title {
     color: var(--primary-color);
     font-weight: bold;
-  }
-  
-  /* Próximos Shows */
-  #tour {
+}
+
+/* Próximos Shows */
+#tour {
     background-color: var(--background-color);
-  }
-  
-  .list-group-item {
+}
+
+.list-group-item {
     background-color: var(--secondary-color);
     color: var(--text-color);
     border: none;
-  }
-  
-  /* Footer */
-  footer {
+}
+
+/* Footer */
+footer {
     background-color: var(--secondary-color);
-  }
-  
-  footer a {
+}
+
+footer a {
     color: var(--text-color);
     text-decoration: none;
-  }
-  
-  footer a:hover {
+}
+
+footer a:hover {
     color: var(--primary-color);
-  }
-  
+}
+
+/* Estilos personalizados con media queries */
+@media (max-width: 575.98px) {
+    .hero {
+        background: url('../img/ladrillos.jpg') no-repeat center center/cover;
+        backdrop-filter: blur(6px);
+    }
+    .hero h1 {
+        font-size: var(--heading-size-h1-xs);
+    }
+    .hero p {
+        font-size: var(--font-size-sm);
+    }
+    .img-hero {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .hero {
+        background: url('../img/ladrillos.jpg') no-repeat center center/cover;
+        backdrop-filter: blur(6px);
+    }
+    .hero h1 {
+        font-size: var(--heading-size-h1-sm);
+        color: var(--primary-color);
+        font-weight: bold;
+    }
+    .hero p {
+        font-size: var(--font-size-md);
+    }
+    .img-hero {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero {
+        background: url('../img/ladrillos.jpg') no-repeat center center/cover;
+        backdrop-filter: blur(6px);
+    }
+    .hero h1 {
+        font-size: var(--heading-size-h1-md);
+    }
+    .hero p {
+        font-size: var(--font-size-lg);
+    }
+    .img-hero {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero h1 {
+        font-size: var(--heading-size-h1-lg);
+    }
+    .hero p {
+        font-size: var(--font-size-xl);
+    }
+}
