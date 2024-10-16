@@ -101,6 +101,9 @@ body {
 }
 
 /* Discografía */
+.rows-discos {
+    gap: 26px;
+}
 #discos .card {
     background-color: var(--secondary-color);
     border: none;
