@@ -39,11 +39,13 @@
     --heading-size-h3-lg: var(--font-size-lg);
     --heading-size-h3-xl: var(--font-size-lg);
 }
+
 header {
     position: sticky; /* Cambia a fixed si deseas que esté siempre visible */
     top: 0;
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
+
 /* Estilo general del body */
 body {
     background-color: var(--background-color);
@@ -57,6 +59,8 @@ body {
 /* Header y Navbar */
 .navbar {
     background-color: var(--secondary-color);
+    display: flex; /* Agregar flex para alinear elementos */
+    justify-content: flex-end; /* Alinear opciones a la derecha */
 }
 
 .navbar-brand {
@@ -64,22 +68,28 @@ body {
     font-size: var(--font-size-lg);
     font-weight: bold;
 }
+
 .container-navbar {
     max-width: 100%;
-    padding: 0 24px 0 24px;
+    padding: 0 24px; /* Espaciado lateral */
     gap: 4px;
 }
+
 .container-navbar li:hover {
     border: 1px solid var(--color-1);
     color: var(--color-1);
     border-radius: 8px;
 }
+
 #navbarNav ul {
+    display: flex; /* Flex para alinear elementos horizontalmente */
     gap: 8px;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-lin {
-    background-color: var(--color-1); /* Cambia rojo por la variable global */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: var(--color-1); /* Usar variable global */
 }
+
 .nav-link {
     color: var(--text-color);
 }
@@ -123,6 +133,7 @@ body {
 .rows-discos {
     gap: 26px;
 }
+
 #discos .card {
     background-color: var(--secondary-color);
     border: none;
@@ -160,8 +171,14 @@ footer a:hover {
 
 /* Estilos personalizados con media queries */
 @media (max-width: 575.98px) {
+    body {
+        font-size: var(--font-size-sm); /* Tamaño de fuente base */
+    }
     .container-navbar {
-        padding: 0;
+        padding: 0 12px; /* Espaciado lateral */
+    }
+    .navbar-brand {
+        font-size: var(--font-size-sm);
     }
     .hero {
         background: url('../img/ladrillos.jpg') no-repeat center center/cover;
@@ -180,7 +197,13 @@ footer a:hover {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .container-navbar {
+        padding: 0 12px 0 12px;
+    }
+    .container-navbar a {
         padding: 0 0 0 24px;
+    }
+    .navbar-brand {
+        font-size: var(--font-size-sm);
     }
     .hero {
         background: url('../img/ladrillos.jpg') no-repeat center center/cover;
@@ -203,6 +226,9 @@ footer a:hover {
     .container-navbar {
         padding: 0;
     }   
+    .navbar-brand {
+        font-size: var(--font-size-md);
+    }
     .hero {
         background: url('../img/ladrillos.jpg') no-repeat center center/cover;
         backdrop-filter: blur(6px);
