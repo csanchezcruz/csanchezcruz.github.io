@@ -188,7 +188,6 @@ body {
 }
 
 .lugar {
-    /* font-family: 'Arial', sans-serif; */
     font-weight: bold;
 }
 
@@ -207,18 +206,16 @@ body {
     text-decoration: underline;
 }
 .ir-arriba {
-    display:none;
-    padding:20px;
-    background: var(--color-1);
-    font-size:20px;
-    border-radius: 8px;
-    color:#fff;
-    cursor:pointer;
-    position: fixed;
-    bottom:15px;
-    right:15px;
+    position: fixed; /* O absolute si prefieres */
+    bottom: 20px; /* Distancia desde el fondo de la ventana */
+    right: 20px; /* Distancia desde el lado derecho */
+    background-color: var(--color-1); /* Color de fondo semi-transparente */
+    border-radius: 50%; /* Hacer el botón redondo */
+    padding: 10px; /* Espaciado interno */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    display: none; /* Oculto por defecto */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
 }
-
 /* Footer */
 footer {
     background-color: var(--secondary-color);
