@@ -134,66 +134,77 @@ body {
 /* Próximos Shows */
 .tour-container {
     background-color: #f8f9fa;
-  }
-  
-  .title {
+}
+
+.title {
     font-family: 'Arial', sans-serif;
     font-weight: 700;
     color: var(--color-1);
-  }
-  
-  .evento-item {
+}
+
+.evento-item {
     border-bottom: 1px solid #e0e0e0;
     transition: background-color 0.3s ease;
     cursor: pointer;
-  }
-  .evento-item a {
+}
+.evento-item a {
     color: var(--body-font);
-  }
-  .evento-item:hover .mes,
-  .evento-item:hover .fecha, 
-  .evento-item:hover .lugar,
-  .evento-item:hover .ubicacion,
-  .evento-item:hover .flyer {
+}
+.evento-item:hover .mes,
+.evento-item:hover .fecha, 
+.evento-item:hover .lugar,
+.evento-item:hover .ubicacion,
+.evento-item:hover .flyer {
     color: var(--color-1-hover);
-  }
-  .evento-item:active .mes,
-  .evento-item:active .fecha, 
-  .evento-item:active .lugar,
-  .evento-item:active .ubicacion,
-  .evento-item:active .flyer {
+}
+.evento-item:active .mes,
+.evento-item:active .fecha, 
+.evento-item:active .lugar,
+.evento-item:active .ubicacion,
+.evento-item:active .flyer {
     color: var(--color-1-hover) !important;
-  }
-  .mes {
+}
+.mes {
     font-weight: 600;
     color: #007bff;
-  }
-  
-  .fecha {
+}
+
+.fecha {
     color: #6c757d;
-  }
-  
-  .lugar {
+}
+
+.lugar {
     /* font-family: 'Arial', sans-serif; */
     font-weight: bold;
-  }
-  
-  .ubicacion {
+}
+
+.ubicacion {
     font-size: 0.85rem;
     color: var(--text-color);
-  }
-  
-  .flyer {
+}
+
+.flyer {
     font-size: 1rem;
     color: #17a2b8;
     cursor: pointer;
-  }
-  
-  .flyer:hover {
+}
+
+.flyer:hover {
     text-decoration: underline;
-  }
-  
-  
+}
+.ir-arriba {
+    display:none;
+    padding:20px;
+    background: var(--color-1);
+    font-size:20px;
+    border-radius: 8px;
+    color:#fff;
+    cursor:pointer;
+    position: fixed;
+    bottom:15px;
+    right:15px;
+}
+
 /* Footer */
 footer {
     background-color: var(--secondary-color);
@@ -285,7 +296,7 @@ footer p {
     .d-none-sm {
         display: none !important;
     }
-  
+
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {

@@ -19,6 +19,9 @@
 
 <body>
     <!-- Header y Navbar -->
+    <span class="ir-arriba icon-arrow-up2 fa-regular fa-square-caret-up">
+        <!-- <i class="fa-regular fa-square-caret-up"></i> -->
+    </span>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container container-navbar">
@@ -66,17 +69,23 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">
-                    <div class="row align-items-center text-center py-3 evento-item">
+                    <div class="row align-items-center text-center py-3 evento-item" data-bs-toggle="modal" data-bs-target="#modalFlayer" style="cursor: pointer;">
                         <div class="col-3 text-end">
-                            <span class="mes fs-4">Oct</span>
-                            <span class="fecha d-block fs-6">18, 19</span>
+                            <a href="#" class="text-decoration-none w-100 d-block">
+                                <span class="mes fs-4">Oct</span>
+                                <span class="fecha d-block fs-6">18, 19</span>
+                            </a>
                         </div>
                         <div class="col-5 text-start">
-                            <span class="lugar fs-5 fw-bold">Guadalahamburg 2024, Guadalajara</span>
-                            <span class="ubicacion d-block">Ubicación</span>
+                            <a href="#" class="text-decoration-none w-100 d-block">
+                                <span class="lugar fs-5 fw-bold">Guadalahamburg 2024, Guadalajara</span>
+                                <span class="ubicacion d-block">Guadalajara</span>
+                            </a>
                         </div>
                         <div class="col-4">
-                            <span class="flyer">Flyer del evento</span>
+                            <a href="/" class="text-decoration-none w-100 d-block">
+                                <span class="flyer">Cartel del evento</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +94,7 @@
                 <div class="col-12 col-lg-10">
                     <div class="row align-items-center text-center py-3 evento-item" data-bs-toggle="modal" data-bs-target="#modalFlayer1" style="cursor: pointer;">
                         <div class="col-3 text-end">
-                            <a href="#" class="text-decoration-none w-100 d-block">
+                            <a href="/" class="text-decoration-none w-100 d-block">
                                 <span class="mes fs-4">Oct</span>
                                 <span class="fecha d-block fs-6">26</span>
                             </a>
@@ -98,22 +107,35 @@
                         </div>
                         <div class="col-4">
                             <a href="#" class="text-decoration-none w-100 d-block">
-                                <span class="flyer">Flyer del evento</span>
+                                <span class="flyer">Cartel del evento</span>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
            <!-- Modal HTML -->
+           <div class="modal fade" id="modalFlayer" tabindex="-1" aria-labelledby="modalFlayer1Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title title" id="modalFlayer1Title">Guadalahamburg 2024</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/img/hamburguer_flyer.jpg" class="img-fluid" alt="Flyer del evento">
+                    </div>
+                </div>
+            </div>
+        </div>
             <div class="modal fade" id="modalFlayer1" tabindex="-1" aria-labelledby="modalFlayer1Title" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="modalFlayer1Title">Flyer del Evento</h5>
+                            <h5 class="modal-title title" id="modalFlayer1Title">Ixtapalocos Artsesions</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="assets/images/flyer.jpg" class="img-fluid" alt="Flyer del evento">
+                            <img src="assets/img/ixtapalocos.jpg" class="img-fluid" alt="Flyer del evento">
                         </div>
                     </div>
                 </div>
@@ -128,7 +150,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <img src="assets/images/flyer.jpg" class="img-fluid" alt="Flyer del evento">
+                            <img src="assets/img/" class="img-fluid" alt="Flyer del evento">
                         </div>
                     </div>
                 </div>
@@ -179,9 +201,9 @@
                 <!-- Cuarta Card -->
                 <div class="col-sm-12 col-md-3 mb-3">
                     <div class="card">
-                        <img src="assets/img/donablanca.jpg" class="card-img-top" alt="Doña bñanca">
+                        <img src="assets/img/donablanca.jpg" class="card-img-top" alt="Doña blanca">
                         <div class="card-body">
-                            <h5 class="card-title">Doña bñanca</h5>
+                            <h5 class="card-title">Doña blanca</h5>
                             <p class="card-text">Descripción breve</p>
                             <a href="https://www.youtube.com/watch?v=HKIcbiBJI2M" target="_blank" class="btn btn-primary">Ver video</a>
                         </div>
@@ -211,9 +233,31 @@
 <!-- </footer> -->
  <!-- js -->
     <script>
+        $(document).ready(function(){
+
+            $('.ir-arriba').click(function(){
+                $('body, html').animate({
+                    scrollTop: '0px'
+                }, 300);
+            });
+
+            $(window).scroll(function(){
+                if( $(this).scrollTop() > 0 ){
+                    $('.ir-arriba').slideDown(300);
+                } else {
+                    $('.ir-arriba').slideUp(300);
+                }
+            });
+
+        });
         $('#myModal').on('shown.bs.modal', function () {
-            $('#myInput').trigger('focus')
+            $('#myInput').trigger('focus');
         })
+        document.querySelectorAll('.evento-item a').forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault(); // Evita el desplazamiento hacia arriba
+            });
+        });
     </script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
