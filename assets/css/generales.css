@@ -39,7 +39,11 @@ header {
 /* Estilo general del body */
 body {
     /* background-color: var(--background-color); */
-    background-image: url('../img/fondoobscuro.jpg');
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fondoobscuro.jpg') no-repeat center center/cover; */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fondos/fondo_azul.jpg') no-repeat center center/cover; */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fondos/pexels-cottonbro.jpg') no-repeat center center/cover; */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/fondos/pexels-cottonbro-9665191.jpg') no-repeat center center/cover;
+    /* background: url('../img/fondos/pexels-cottonbro.jpg'); */
     color: var(--text-color);
     font-family: var(--body-font);
     margin: 0;
@@ -128,6 +132,9 @@ body {
 }
 
 /* Discografía */
+.discos {
+    margin:24px ;
+}
 .carouselExampleControls{
     padding:5%;
 }
@@ -140,7 +147,7 @@ body {
 
 /* Próximos Shows */
 .tour-container {
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
 }
 
 .title {
